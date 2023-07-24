@@ -1,5 +1,5 @@
 #include <iostream>
-#include "koios/koios.hpp"
+#include <koios/koios.hpp>
 
 int main() {
   Koios::Log(

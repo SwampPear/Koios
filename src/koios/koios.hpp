@@ -19,7 +19,7 @@ class Koios {
     template<class... Args>
     static void Log(Args... args) {
       std::ostringstream stream;
-      ((stream << args), ...);    // fold unpack args
+      ((stream << args), ...);        // fold unpack args
       stream << std::endl;
 
       std::cout << std::move(stream).str();
@@ -33,9 +33,9 @@ class Koios {
     template<class... Args>
     static std::string Form(std::string message, Args... args) {
       std::ostringstream stream;
-      ((stream << args), ...);    // fold unpack args
+      ((stream << args), ...);        // fold unpack args
       stream << message << ASCII_END;         
-      stream << "\033[0m";        // ASCII end code
+      stream << "\033[0m";            // ASCII end code
 
       return std::move(stream).str();
     }
