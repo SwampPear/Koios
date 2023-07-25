@@ -4,4 +4,19 @@
 
 <hr>
 
-Koios is a microscopic, single header C++ library for building terminal utilities. See below for details ↓
+Koios is a microscopic, single header C++ library for building terminal utilities. See below for usage ↓
+
+### Usage
+
+```
+#include <koios/koios.hpp>
+
+int main() {
+  Koios::Log(
+    Koios::Form("Message: ", Koios::GREEN),
+    Koios::Form("hello!", Koios::RED)
+  )
+
+  return 0;
+}
+```
