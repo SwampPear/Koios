@@ -9,6 +9,7 @@ class Koios {
     static constexpr char *GREEN      = (char*)"\033[92m";
     static constexpr char *YELLOW     = (char*)"\033[93m";
     static constexpr char *RED        = (char*)"\033[91m";
+    static constexpr char *CYAN       = (char*)"\033[96m";
     static constexpr char *BOLD       = (char*)"\033[1m";
     static constexpr char *UNDERLINE  = (char*)"\033[4m";
 
@@ -31,8 +32,8 @@ class Koios {
      * @param message content of string
      * @param args variadic collection of attributes
      */
-    template<class... Args>
-    static std::string Form(std::string message, Args... args) {
+    template<class T, class... Args>
+    static std::string Form(T message, Args... args) {
       std::ostringstream stream;
       ((stream << args), ...);        // fold unpack args
       stream << message << ASCII_END;         
