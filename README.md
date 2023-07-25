@@ -1,1 +1,3 @@
-# Terminal Utility
+<p align="center">
+  <img alt="Koios Logo" src="assets/koios.svg" style="width: 80%">   
+</p>
