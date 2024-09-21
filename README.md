@@ -20,3 +20,5 @@ int main() {
   return 0;
 }
 ```
+
+For the Python version of Koios, navigate [here](https://github.com/SwampPear/KoiosPy)
